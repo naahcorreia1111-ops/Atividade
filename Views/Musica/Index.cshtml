@@ -1,0 +1,89 @@
+@model List<Ativ_MVC.Models.Musica>
+
+<body>
+    <h1>Músicas</h1>
+
+    <a href="">Nova música</a>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Artista</th>
+                <th>Gênero</th>
+                <th>Ano</th>
+                <th>Duração</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @* <tr>
+                <td>JETSKI</td>
+                <td>Pedro Sampaio, Melody e MC Meno K</td>
+                <td>Funk</td>
+                <td>2025</td>
+                <td>2.20</td>
+                <td>
+                    <a href="">Editar</a> | <a href="">Excluir</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Oceano</td>
+                <td>Djavan</td>
+                <td>MPB</td>
+                <td>1989</td>
+                <td>4.56</td>
+                <td>
+                    <a href="">Editar</a> | <a href="">Excluir</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Rapariga</td>
+                <td>Filho do Piseiro</td>
+                <td>Piseiro</td>
+                <td>2021</td>
+                <td>2.44</td>
+                <td>
+                    <a href="">Editar</a> | <a href="">Excluir</a>
+                </td>
+            </tr> *@
+
+            @foreach(Musica m in Model){
+   <tr>
+                <td>@m.Titulo</td>
+                <td>@m.Artista</td>
+                <td>@m.Genero</td>
+                <td>@m.AnoLancamento</td>
+                <td>@m.Duracao_Minutos</td>
+                <td>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Oceano</td>
+                <td>Djavan</td>
+                <td>MPB</td>
+                <td>1989</td>
+                <td>4.56</td>
+                <td>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Rapariga</td>
+                <td>Filho do Piseiro</td>
+                <td>Piseiro</td>
+                <td>2021</td>
+                <td>2.44</td>
+                <td>
+                </td>
+            </tr>
+
+
+            }
+        </tbody>
+    </table>
+</body>
