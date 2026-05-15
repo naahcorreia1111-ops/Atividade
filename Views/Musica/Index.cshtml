@@ -3,7 +3,9 @@
 <body>
     <h1>Músicas</h1>
 
-    <a href="">Nova música</a>
+    <p>Total de Musicas: @ViewBag.TotalMusica</p>
+
+    <a asp-controller="Musica" asp-action="Cadastro">Nova Musica</a>
 
     <table>
         <thead>
@@ -16,7 +18,6 @@
                 <th>Ações</th>
             </tr>
         </thead>
-
         <tbody>
             @* <tr>
                 <td>JETSKI</td>
@@ -51,38 +52,17 @@
                 </td>
             </tr> *@
 
-            @foreach(Musica m in Model){
-   <tr>
-                <td>@m.Titulo</td>
-                <td>@m.Artista</td>
-                <td>@m.Genero</td>
-                <td>@m.AnoLancamento</td>
-                <td>@m.Duracao_Minutos</td>
-                <td>
-                </td>
-            </tr>
-
-            <tr>
-                <td>Oceano</td>
-                <td>Djavan</td>
-                <td>MPB</td>
-                <td>1989</td>
-                <td>4.56</td>
-                <td>
-                </td>
-            </tr>
-
-            <tr>
-                <td>Rapariga</td>
-                <td>Filho do Piseiro</td>
-                <td>Piseiro</td>
-                <td>2021</td>
-                <td>2.44</td>
-                <td>
-                </td>
-            </tr>
-
-
+          <tbody>
+            @foreach(Musica m in Model)
+            {
+                <tr>
+                    <td>@m.Titulo</td>
+                    <td>@m.Artista</td>
+                    <td>@m.Genero</td>
+                    <td>@m.AnoLancamento</td>
+                    <td>@m.Duracao_Minutos</td>
+                    <td>    <button> Excluir</button>  </td>
+                     </tr>
             }
         </tbody>
     </table>

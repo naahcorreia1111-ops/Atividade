@@ -25,5 +25,12 @@ namespace Ativ_MVC.Repositories
         }
 
 
+
+    public void Adicionar(Musica m)
+        {
+      _context.Musica.Add(m);
+      _context.SaveChanges();
+
+        }
     }
 }

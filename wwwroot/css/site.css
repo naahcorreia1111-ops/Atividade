@@ -1,31 +1,154 @@
-html {
-  font-size: 14px;
+/* Variáveis de Cores - Tema Musical Dark & Roxo */
+:root {
+    --musica-bg: #0d0b14; /* Fundo super escuro (quase preto) com um leve subtom roxo */
+    --musica-panel: #1a1625; /* Fundo da tabela e áreas de destaque */
+    --musica-destaque: #8b5cf6; /* Roxo vibrante (como nos seus botões originais) */
+    --musica-destaque-hover: #7c3aed; /* Roxo ligeiramente mais escuro para o hover */
+    --texto-claro: #ffffff; /* Branco puro */
+    --texto-mutado: #9ca3af; /* Cinza claro para textos secundários */
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
+/* Configurações Gerais */
 body {
-  margin-bottom: 60px;
+    background-color: var(--musica-bg);
+    color: var(--texto-claro);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 30px;
+    line-height: 1.6;
 }
 
-.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
-  color: var(--bs-secondary-color);
-  text-align: end;
+/* Títulos */
+h1, h2 {
+    color: var(--musica-destaque);
+    border-bottom: 2px solid var(--musica-destaque);
+    display: inline-block;
+    padding-bottom: 8px;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
 }
 
-.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
-  text-align: start;
+p {
+    color: var(--texto-mutado);
+}
+
+/* Formulário de Cadastro */
+label {
+    display: block;
+    margin-top: 15px;
+    color: var(--texto-claro);
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+input[type="text"], input[type="number"] {
+    background-color: rgba(255, 255, 255, 0.03); /* Fundo sutil */
+    border: 1px solid #374151; /* Borda cinza escura */
+    color: var(--texto-claro);
+    padding: 12px 15px;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 450px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: var(--musica-destaque);
+    outline: none;
+    background-color: rgba(139, 92, 246, 0.05); /* Fundo levemente roxo ao focar */
+    box-shadow: 0 0 8px rgba(139, 92, 246, 0.3); /* Brilho roxo */
+}
+
+/* Estilização da Tabela de Músicas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--musica-panel);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+th, td {
+    padding: 16px 20px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Cabeçalho da Tabela */
+th {
+    background-color: rgba(139, 92, 246, 0.15); /* Fundo roxo translúcido */
+    color: var(--musica-destaque); /* Texto roxo */
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+}
+
+/* Efeito ao passar o mouse nas linhas */
+tr:hover {
+    background-color: rgba(139, 92, 246, 0.08); /* Leve brilho roxo na linha */
+}
+
+/* Destaque para uma coluna específica (ex: Ano) */
+td:nth-child(4) {
+    color: var(--musica-destaque);
+    font-weight: bold;
+}
+
+/* Botões Principais (Salvar, Nova Música) */
+button, a.btn, input[type="submit"] {
+    background-color: var(--musica-destaque);
+    color: #ffffff; /* Texto branco no botão roxo */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+button:hover, a.btn:hover, input[type="submit"]:hover {
+    background-color: var(--musica-destaque-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(139, 92, 246, 0.4);
+}
+
+/* Botão Secundário (Voltar) */
+.btn-secundario {
+    background-color: transparent;
+    color: var(--texto-claro);
+    border: 1px solid #4b5563; /* Borda cinza */
+}
+
+.btn-secundario:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--texto-claro);
+    box-shadow: none;
+}
+
+/* Botões da Tabela (Editar / Excluir) */
+.btn-acao {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    margin-right: 5px;
+    margin-top: 0;
+}
+
+.btn-excluir {
+    background-color: transparent;
+    color: #f87171; /* Vermelho claro */
+    border: 1px solid #f87171;
+}
+
+.btn-excluir:hover {
+    background-color: #ef4444; /* Vermelho mais forte */
+    color: white;
+    border-color: #ef4444;
 }

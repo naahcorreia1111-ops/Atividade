@@ -129,7 +129,6 @@ C:\Users\49867204816\Desktop\Ativ MVC\obj\Debug\net10.0\rjsmcshtml.dswa.cache.js
 C:\Users\49867204816\Desktop\Ativ MVC\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\49867204816\Desktop\Ativ MVC\obj\Debug\net10.0\scopedcss\bundle\Ativ MVC.styles.css
 C:\Users\49867204816\Desktop\Ativ MVC\obj\Debug\net10.0\scopedcss\projectbundle\Ativ MVC.bundle.scp.css
-C:\Users\49867204816\Desktop\Ativ MVC\obj\Debug\net10.0\compressed\dmt64dof99-{0}-b9sayid5wm-b9sayid5wm.gz
 C:\Users\49867204816\Desktop\Ativ MVC\obj\Debug\net10.0\compressed\q5qt50esfz-{0}-61n19gt1b8-61n19gt1b8.gz
 C:\Users\49867204816\Desktop\Ativ MVC\obj\Debug\net10.0\compressed\79t33i1csi-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
 C:\Users\49867204816\Desktop\Ativ MVC\obj\Debug\net10.0\compressed\ywrt9d4oyc-{0}-c07vhdu07q-c07vhdu07q.gz
@@ -145,3 +144,5 @@ C:\Users\49867204816\Desktop\Ativ MVC\obj\Debug\net10.0\refint\Ativ MVC.dll
 C:\Users\49867204816\Desktop\Ativ MVC\obj\Debug\net10.0\Ativ MVC.pdb
 C:\Users\49867204816\Desktop\Ativ MVC\obj\Debug\net10.0\Ativ MVC.genruntimeconfig.cache
 C:\Users\49867204816\Desktop\Ativ MVC\obj\Debug\net10.0\ref\Ativ MVC.dll
+C:\Users\49867204816\Desktop\Ativ MVC\obj\Debug\net10.0\Ativ MVC.sourcelink.json
+C:\Users\49867204816\Desktop\Ativ MVC\obj\Debug\net10.0\compressed\dmt64dof99-{0}-va86nzntfl-va86nzntfl.gz
